@@ -107,6 +107,12 @@
         "variable-declaration": "nospace"
       }
     ],
+    "typedef": [
+      true,
+      "call-signature", 
+      "parameter", 
+      "member-variable-declaration"
+    ],
     "unified-signatures": true,
     "variable-name": false,
     "whitespace": [

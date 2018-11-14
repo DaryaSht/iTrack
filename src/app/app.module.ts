@@ -12,9 +12,10 @@ import { RegistrationComponent } from './pages/registration-page/registration.co
 import { LogInComponent } from './pages/log-in-page/log-in.component';
  
 '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatInputModule, MatTableModule, MatPaginatorModule, MatSortModule } 
 from '@angular/material';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 // определение маршрутов
 const appRoutes: Routes =[
@@ -29,9 +30,12 @@ const appRoutes: Routes =[
     AppRoutingModule,
     MatButtonModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
+    MatFormFieldModule,
     RouterModule.forRoot(appRoutes)// что бы применить маршруты
   ],
   providers: [],
